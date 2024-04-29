@@ -1,0 +1,115 @@
+:root {
+    --color-text: #9063CD;
+    --text-font: 'Caveat', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    transition-duration: 200ms;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.7;
+    main {
+        font-size: clamp(.4em, 5vw, 1.1em);
+    }
+    height: 100%;
+    #color-text {
+        color: var(--color-text);
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+         :hover {
+            color: var(--color-text);
+        }
+    }
+}
+
+.btn {
+    background-color: var(--color-text);
+    color: #fff;
+    font-family: var(--text-font);
+}
+
+.btn:hover {
+    background-color: var(--color-text);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+nav {
+    .nav-link:hover {
+        color: #9063CD;
+    }
+}
+
+.start {
+    #main-text {
+        font-size: clamp(1.7em, 7vw, 3.5em);
+        font-family: "caveat", cursive;
+    }
+    margin-top: 10%;
+    #role {
+        font-family: 'Caveat', cursive;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+}
+
+.socials {
+    top: 50%;
+    .icon {
+        padding: 0.4em;
+        border-radius: 10px;
+    }
+    a:hover {
+        color: #7843E9;
+    }
+    .vr {
+        height: 10em;
+    }
+}
+
+.my-color {
+    color: var(--color-text);
+}
+
+.lg-icons div {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+    font-size: 2.5em;
+    margin: 0 .1em .2em 0;
+    padding: 0 .2em 0 0.2em;
+}
+
+.border-class {
+    font-family: var(--text-font);
+}
+
+
+/* Project cards */
+
+.project {
+     :hover {
+        .card-icon {
+            color: var(--color-text);
+        }
+        transform: translateY(-5px);
+    }
+    .my-card {
+        font-family: var(--text-font);
+    }
+    .card-icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100px;
+        top: -10%;
+        z-index: 2;
+    }
+}
